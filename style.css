@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+header .wel{
+    color: black;
+    background-color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+.wallpeper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#text{
+    position: absolute;
+    white-space: nowrap;
+    color: black;
+    font-size: 5em;
+    text-shadow: 2px 4px 5px white;
+    z-index: 0;
+}
+.wallpeper img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+.wallpeper img#gate-left{
+    transform: translateX(-282px);
+    
+}
+.wallpeper img#gate-right{
+    transform: translateX(305px);
+    
+}
+.wallpeper img#gress{
+    position: relative;
+    margin-bottom: 100px;
+}
+.sec{
+    position: relative;
+    background-color: #020912;
+    color: #fff;
+    padding: 30px 100px;
+}
+.sec h1{
+    font-size: 3em;
+}
